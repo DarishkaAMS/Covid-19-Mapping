@@ -20,6 +20,6 @@ def index(request):
         'icon': response['weather']['icon']
     }
 
-    context = {'info': city_info)}
+    context = {'info': city_info}
 
     return render(request, 'weather/index.html', context)

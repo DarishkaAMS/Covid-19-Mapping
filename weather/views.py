@@ -10,7 +10,7 @@ def index_view(request):
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=' + app_id
     city = "London"
 
-    cities = City.object.all()
+    cities = City.objects.all()
 
     all_cities = []
 

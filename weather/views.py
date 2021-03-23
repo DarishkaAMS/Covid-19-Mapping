@@ -19,4 +19,7 @@ def index(request):
         'clouds': response['clouds']['all'],
         'icon': response['weather']['icon']
     }
-    return render(request, 'weather/index.html')
+
+    context = {'info': city_info)}
+
+    return render(request, 'weather/index.html', context)

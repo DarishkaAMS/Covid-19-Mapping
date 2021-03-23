@@ -35,7 +35,11 @@
         <div class="col-4 offset-1">
           <h1>Information</h1>
           <div class="alert alert-primary">
-            Weather in Kyiv
+            <b>City: </b> {{ info.city }}
+            <b>Temperature: </b> {{ info.temp }} <sup>0</sup> <br>
+            <b>Feels like: </b> {{ info.feels_like }} <sup>0</sup> <br>
+            <b>Clouds: </b> {{ info.clouds }} <br>
+            <img src="http://openweathermap.org/img/w/{{}}.png" alt="=^_^=" class="img-thumbnail">
           </div>
         </div>
       </div>

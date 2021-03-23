@@ -29,6 +29,6 @@ def index_view(request):
         }
         all_cities.append(city_info)
 
-    context = {'all_info': all_cities}
+    context = {'all_info': all_cities, 'form': form}
 
     return render(request, 'weather/index.html', context)

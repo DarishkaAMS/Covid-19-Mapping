@@ -15,8 +15,6 @@ def index_view(request):
 
     for city in cities:
         response = requests.get(url.format(city.name)).json()
-        # print('NAME', city.name)
-        # print("RESP", response['main']['temp']) #['main']['temp']
         city_info = {
             'city': city.name,
             'temp': response['main']['temp'],

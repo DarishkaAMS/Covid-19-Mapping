@@ -27,7 +27,9 @@
         <div class="col-5 offset-1">
           <h1>Weather in your city</h1>
           <form action="" method="post">
+            {% csrf_token %}
             <label for="city">City</label>
+            {{ form.name }}
             <input type="text" id="city" class="form-control" name="city" placeholder="Where are we?">
             <input type="submit" name="send" value="Go" class="btn btn-primary">
           </form>

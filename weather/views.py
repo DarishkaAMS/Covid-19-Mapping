@@ -17,7 +17,7 @@ def index(request):
         'temp': response['main']['temp'],
         'feels_like': response['main']['feels_like'],
         'clouds': response['clouds']['all'],
-        'icon': response['weather']['icon']
+        'icon': response['weather'][0]['icon']
     }
 
     context = {'info': city_info}
